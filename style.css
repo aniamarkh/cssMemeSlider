@@ -22,7 +22,7 @@ main {
   text-align: center;
   width: 100vw;
   padding: 0.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -40,7 +40,7 @@ input[type="radio"] {
   flex-direction: column;
   align-items: flex-start;
   background-color: white;
-  width: 33rem;
+  max-width: 33rem;
   margin: 0 auto;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -50,18 +50,18 @@ input[type="radio"] {
 .slider__memes {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  overflow: hidden;
+  width: 31rem;
 }
 
 .slider__meme img {
   aspect-ratio: 0.9;
-  width: 31rem;
+  max-width: 31rem;
 }
 
 .slider__text {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   text-align: center;
 }
 
@@ -104,4 +104,77 @@ input[type="radio"] {
 
 .slider__control:active .slider__control--btn {
   background-color: rgb(255, 0, 0);
+}
+
+input#slide1:checked
+  ~ .slider__controls
+  > label[for="slide1"]
+  > .slider__control--btn,
+input#slide2:checked
+  ~ .slider__controls
+  > label[for="slide2"]
+  > .slider__control--btn,
+input#slide3:checked
+  ~ .slider__controls
+  > label[for="slide3"]
+  > .slider__control--btn,
+input#slide4:checked
+  ~ .slider__controls
+  > label[for="slide4"]
+  > .slider__control--btn,
+input#slide5:checked
+  ~ .slider__controls
+  > label[for="slide5"]
+  > .slider__control--btn {
+  background-color: rgb(255, 0, 0);
+}
+
+input#slide1:checked ~ .slider > .slider__memes > .slider__meme {
+  transform: translate(0);
+  transition: all 0.5s;
+}
+
+input#slide2:checked ~ .slider > .slider__memes > .slider__meme {
+  transform: translate(-100%);
+  transition: all 0.5s;
+}
+
+input#slide3:checked ~ .slider > .slider__memes > .slider__meme {
+  transform: translate(-200%);
+  transition: all 0.5s;
+}
+
+input#slide4:checked ~ .slider > .slider__memes > .slider__meme {
+  transform: translate(-300%);
+  transition: all 0.5s;
+}
+
+input#slide5:checked ~ .slider > .slider__memes > .slider__meme {
+  transform: translate(-400%);
+  transition: all 0.5s;
+}
+
+input#slide1:checked ~ .slider > .slider__text > .slider__text__p {
+  transform: translate(0);
+  transition: all 0.5s;
+}
+
+input#slide2:checked ~ .slider > .slider__text > .slider__text__p {
+  transform: translate(-100%);
+  transition: all 0.5s;
+}
+
+input#slide3:checked ~ .slider > .slider__text > .slider__text__p {
+  transform: translate(-200%);
+  transition: all 0.5s;
+}
+
+input#slide4:checked ~ .slider > .slider__text > .slider__text__p {
+  transform: translate(-300%);
+  transition: all 0.5s;
+}
+
+input#slide5:checked ~ .slider > .slider__text > .slider__text__p {
+  transform: translate(-400%);
+  transition: all 0.5s;
 }
