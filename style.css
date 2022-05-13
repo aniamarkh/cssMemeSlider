@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/img/bg.png");
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  background-color: white;
+  text-align: center;
+  width: 100vw;
+  padding: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+h1,
+p {
+  margin-bottom: 0 !important;
+  font-family: "Roboto Mono", monospace;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 33rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.slider__memes {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.slider__meme img {
+  aspect-ratio: 0.9;
+  width: 31rem;
+}
+
+.slider__text {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: center;
+}
+
+.slider__text__p {
+  width: 31rem;
+  align-items: center;
+}
+
+.slider__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.slider__control {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 2rem;
+  width: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  color: black;
+}
+
+.slider__control--btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.slider__control:hover .slider__control--btn {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider__control:active .slider__control--btn {
+  background-color: rgb(255, 0, 0);
+}

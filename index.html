@@ -6,31 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Meme Slider</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1 class="title">CSS Mem Slider</h1>
+<body> 
+  <main>
+    <div class="title">    
+      <h1 class="title">CSS MEME SLIDER</h1>
+      <p>wow such fun...</p>
+    </div>
 
-  <div class="slider">
     <input type="radio" name="slider" id="slide1" checked>
     <input type="radio" name="slider" id="slide2">
     <input type="radio" name="slider" id="slide3">
     <input type="radio" name="slider" id="slide4">
     <input type="radio" name="slider" id="slide5">
 
-    <div class="slider__memes">
-      <div class="slider__meme"><img src="./assets/img/1.jpg"></div>
-      <div class="slider__meme"><img src="./assets/img/2.jpg"></div>
-      <div class="slider__meme"><img src="./assets/img/3.jpg"></div>
-      <div class="slider__meme"><img src="./assets/img/4.jpg"></div>
-      <div class="slider__meme"><img src="./assets/img/5.jpg"></div>
-    </div>
+    <div class="slider">
+      <div class="slider__memes">
+        <div class="slider__meme"><img src="./assets/img/1.jpg"></div>
+        <div class="slider__meme"><img src="./assets/img/2.jpg"></div>
+        <div class="slider__meme"><img src="./assets/img/3.jpg"></div>
+        <div class="slider__meme"><img src="./assets/img/4.jpg"></div>
+        <div class="slider__meme"><img src="./assets/img/5.jpg"></div>
+      </div>
 
-    <div class="slider__text">
-      <p>да...</p>
-      <p>хочу...</p>
-      <p>спасибо</p>
-      <p>точно...</p>
-      <p>лол</p>
+      <div class="slider__text">
+        <div class="slider__text__p"><p>да...</p></div>
+        <div class="slider__text__p"><p>хочу...</p></div>
+        <div class="slider__text__p"><p>спасибо...</p></div>
+        <div class="slider__text__p"><p>сыглы</p></div>
+        <div class="slider__text__p"><p>лол</p></div>
+      </div>
     </div>
 
     <div class="slider__controls">
@@ -50,6 +58,7 @@
         <span class="slider__control--btn"></span>
       </label>
     </div>
-  </div>
+    
+  </main>
 </body>
 </html>
