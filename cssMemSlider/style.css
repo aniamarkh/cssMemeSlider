@@ -222,3 +222,28 @@ input#slide5:checked
   transform: translate(-400%);
   transition: all 0.5s;
 }
+
+@media (max-width: 768px) {
+  .slider {
+    width: 18rem;
+  }
+
+  .slider__memes {
+    width: 16rem;
+  }
+
+  .slider__meme img {
+    width: 16rem;
+  }
+
+  .slider--bottom {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+  }
+
+  .slider__text--wrapper {
+    text-align: center;
+  }
+}
