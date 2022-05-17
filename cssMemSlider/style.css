@@ -230,17 +230,7 @@ input#slide5:checked
   .slider--bottom {
     flex-direction: column-reverse;
     gap: 1rem;
-    margin: 0 auto;
     margin-top: 0.8rem;
-  }
-
-  .slider__text--wrapper {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .slider__text {
-    margin: 0 auto !important;
   }
 
   .slider__controls {
