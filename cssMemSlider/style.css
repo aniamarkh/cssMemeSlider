@@ -40,10 +40,10 @@ input[type="radio"] {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  width: 70%;
+  max-width: 43vw;
   border-radius: 1rem;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   padding: 1rem;
   overflow: hidden;
 }
@@ -52,19 +52,20 @@ input[type="radio"] {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  width: 31rem;
+  max-width: 40vw !important;
 }
 
 .slider__meme img {
-  aspect-ratio: 0.9;
-  max-width: 31rem;
+  aspect-ratio: 1.2;
+  max-width: 40vw !important;
 }
 
 .slider--bottom {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-  gap: 10.5rem;
+  justify-content: space-between;
+  width: 40vw !important;
 }
 
 .slider__text--wrapper {
@@ -226,18 +227,6 @@ input#slide5:checked
 }
 
 @media (max-width: 768px) {
-  .slider {
-    width: 18rem;
-  }
-
-  .slider__memes {
-    width: 16rem;
-  }
-
-  .slider__meme img {
-    width: 16rem;
-  }
-
   .slider--bottom {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -246,6 +235,20 @@ input#slide5:checked
   }
 
   .slider__text--wrapper {
+    margin: 0 auto;
     text-align: center;
+  }
+
+  .slider__text {
+    margin: 0 auto !important;
+  }
+
+  .slider__controls {
+    gap: 0.1rem !important;
+    justify-content: center;
+  }
+
+  .slider__control {
+    width: 1.2rem;
   }
 }
