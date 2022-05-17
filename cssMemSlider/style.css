@@ -38,11 +38,12 @@ input[type="radio"] {
 .slider {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: white;
-  max-width: 33rem;
+  align-items: center;
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 1rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
   overflow: hidden;
 }
@@ -146,6 +147,7 @@ input#slide5:checked
   > label[for="slide5"]
   > .slider__control--btn {
   background-color: rgb(255, 0, 0);
+  border: 0.2rem solid #000;
 }
 
 input#slide1:checked ~ .slider > .slider__memes > .slider__meme {
