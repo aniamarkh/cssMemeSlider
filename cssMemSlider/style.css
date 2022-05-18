@@ -21,7 +21,7 @@ main {
   background-color: white;
   text-align: center;
   width: 100vw;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
   margin-bottom: 1rem;
 }
 
@@ -41,6 +41,7 @@ input[type="radio"] {
   align-items: center;
   background-color: #ffffff;
   max-width: 43vw;
+  max-height: 70vh;
   border-radius: 1rem;
   margin: 0 auto;
   margin-top: 0.5rem;
@@ -53,11 +54,13 @@ input[type="radio"] {
   flex-direction: row;
   overflow: hidden;
   max-width: 40vw !important;
+  max-height: 90vh;
 }
 
 .slider__meme img {
   aspect-ratio: 1.2;
   max-width: 40vw !important;
+  max-height: 90vh;
 }
 
 .slider--bottom {
